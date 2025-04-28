@@ -137,27 +137,27 @@ export const UI = () => {
 
         {/* Page Navigation */}
         <div className="w-full overflow-auto pointer-events-auto flex justify-center">
-          <div className="overflow-auto flex items-center gap-4 max-w-full p-10">
+          <div className="overflow-auto flex items-center gap-2 sm:gap-4 lg:gap-6 max-w-full p-4 sm:p-6 md:p-8 lg:p-10">
             {[...pages].map((_, index) => (
-              <button
-                key={index}
-                className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
-                  index === page
-                    ? "bg-white/90 text-black"
-                    : "bg-black/30 text-white"
-                }`}
-                onClick={() => setPage(index)}
-              >
-                {index === 0 ? "Cover" : `Page ${index}`}
-              </button>
+                <button
+                    key={index}
+                    className={`border-transparent hover:border-white transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-full text-sm sm:text-base lg:text-lg uppercase shrink-0 border ${
+                        index === page
+                            ? "bg-white/90 text-black"
+                            : "bg-black/30 text-white"
+                    }`}
+                    onClick={() => setPage(index)}
+                >
+                  {index === 0 ? "Cover" : `Page ${index}`}
+                </button>
             ))}
             <button
-              className={`border-transparent hover:border-white transition-all duration-300  px-4 py-3 rounded-full  text-lg uppercase shrink-0 border ${
-                page === pages.length
-                  ? "bg-white/90 text-black"
-                  : "bg-black/30 text-white"
-              }`}
-              onClick={() => setPage(pages.length)}
+                className={`border-transparent hover:border-white transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-full text-sm sm:text-base lg:text-lg uppercase shrink-0 border ${
+                    page === pages.length
+                        ? "bg-white/90 text-black"
+                        : "bg-black/30 text-white"
+                }`}
+                onClick={() => setPage(pages.length)}
             >
               Back Cover
             </button>

@@ -11,7 +11,7 @@ export const Experience = () => {
         rotationIntensity={2}
       >
         {/* Increase the scale of the book by default */}
-        <Book position={[-0.15, 0, 0]} /> {/* scale set to 2.5 */}
+        <Book position={[-0.15, -0.2, 0]} /> {/* scale set to 2.5 */}
       </Float>
       <OrbitControls enableZoom={false} /> {/* Disable zooming */}
       <Environment preset="studio" />

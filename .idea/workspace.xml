@@ -5,37 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="177a0e6e-3a3e-4790-9e90-61d5ed1f0ca4" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/public/audios/background-music.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/audios/page-flip-01a.mp3" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/images/aman&amp;garima.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/1B945A6D-EEE0-488A-9720-0F1EE24120EE_1_201_a.jpeg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC00680.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC00933.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC00966.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC00993.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01011.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01040.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01064.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01071.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01103.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01145.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01420.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC01489.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC02031.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC02064.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/DSC02069.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/book-back.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/book-cover-roughness.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/textures/book-cover.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/public/vite.svg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Book.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/Experience.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/components/UI.jsx" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/Experience.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/Experience.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/components/UI.jsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/components/UI.jsx" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -58,7 +31,7 @@
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
     &quot;git-widget-placeholder&quot;: &quot;master&quot;,
     &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/apunetha/Desktop/weddingProject/amanwedsgarima&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apunetha/Desktop/weddingProject/amanwedsgarima/src/components&quot;,
     &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -72,6 +45,7 @@
 }</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/components" />
       <recent name="$PROJECT_DIR$" />
       <recent name="$PROJECT_DIR$/public" />
       <recent name="$PROJECT_DIR$/src" />
