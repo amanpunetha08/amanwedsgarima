@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="177a0e6e-3a3e-4790-9e90-61d5ed1f0ca4" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/public/audios/background-music.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/audios/page-flip-01a.mp3" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/images/aman&amp;garima.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/1B945A6D-EEE0-488A-9720-0F1EE24120EE_1_201_a.jpeg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC00680.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC00933.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC00966.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC00993.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01011.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01040.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01064.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01071.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01103.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01145.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01420.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC01489.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC02031.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC02064.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/DSC02069.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/book-back.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/book-cover-roughness.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/textures/book-cover.jpg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/public/vite.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/App.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Book.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/Experience.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/components/UI.jsx" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main.jsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectColorInfo">{
+  &quot;associatedIndex&quot;: 4
+}</component>
+  <component name="ProjectId" id="2wM8lpCrrz0y9uCcNZrpXOHeVZm" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;master&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/apunetha/Desktop/weddingProject/amanwedsgarima&quot;,
+    &quot;node.js.detected.package.standard&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.standard&quot;: &quot;&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;prettierjs.PrettierConfiguration.Package&quot;: &quot;/Users/apunetha/Downloads/Archive/personal_projects/react-js-portfolio-1/01basicreact/node_modules/@types/prettier&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;settings.javascript.prettier&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+      <recent name="$PROJECT_DIR$/public" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="SharedIndexes">
+    <attachedChunks>
+      <set>
+        <option value="bundled-jdk-9823dce3aa75-28b599e66164-intellij.indexing.shared.core-IU-242.24807.4" />
+        <option value="bundled-js-predefined-d6986cc7102b-5c90d61e3bab-JavaScript-IU-242.24807.4" />
+      </set>
+    </attachedChunks>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="177a0e6e-3a3e-4790-9e90-61d5ed1f0ca4" name="Changes" comment="" />
+      <created>1745840235940</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1745840235940</updated>
+      <workItem from="1745840237551" duration="2018000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
