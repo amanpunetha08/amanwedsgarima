@@ -44,12 +44,12 @@ export const UI = () => {
   const [page, setPage] = useAtom(pageAtom);
   const [menuOpen, setMenuOpen] = useState(false);
   const [audio] = useState(
-    new Audio("/amanwedsgarima/audios/background-music.mp3")
+    new Audio("/audios/background-music.mp3")
   );
 
   // Page flip sound
   useEffect(() => {
-    const flipAudio = new Audio("/amanwedsgarima/audios/page-flip-01a.mp3");
+    const flipAudio = new Audio("/audios/page-flip-01a.mp3");
     flipAudio.play();
   }, [page]);
 
@@ -90,7 +90,7 @@ export const UI = () => {
           <a href="#" className="flex items-center gap-4">
             <img
               className="w-40 h-auto sm:w-48"
-              src="/amanwedsgarima/images/aman&garima.png"
+              src="/images/aman&garima.png"
               alt="Logo"
             />
           </a>
@@ -219,7 +219,7 @@ export const UI = () => {
       {/* Hidden Audio */}
       {audioPlaying && (
         <audio
-          src="/amanwedsgarima/audios/background-music.mp3"
+          src="/audios/background-music.mp3"
           autoPlay
           loop
           muted={false}
