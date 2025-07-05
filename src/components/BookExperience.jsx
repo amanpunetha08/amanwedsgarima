@@ -72,7 +72,7 @@ export const HeroSection = () => {
   }, [audio, audioPlaying]);
 
   return (
-    <section className="relative w-full h-screen overflow-hidden text-white">
+    <section id="hero" className="relative w-full h-screen overflow-hidden text-white">
       {/* Marquee Text */}
       <div className="absolute inset-0 overflow-hidden select-none flex items-center justify-center z-0">
         <div className="whitespace-nowrap w-full">

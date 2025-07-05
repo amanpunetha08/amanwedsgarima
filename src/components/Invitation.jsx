@@ -16,7 +16,7 @@ export const Invitation = () => {
   };
 
   return (
-    <div className="flex flex-col items-center justify-center min-h-screen w-full">
+    <div id="invitation" className="flex flex-col items-center justify-center min-h-screen w-full">
       {!submitted ? (
         <form
           onSubmit={handleSubmit}

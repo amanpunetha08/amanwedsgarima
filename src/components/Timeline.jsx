@@ -53,7 +53,7 @@ const timelineEvents = [
 
 export const WeddingTimeline = () => {
   return (
-    <section className="relative w-full min-h-screen bg-gradient-to-b from-[#2c1f13] via-[#4a341f] to-[#a47e3b] text-[#f3e2c7] py-16 px-4 font-sans overflow-hidden">
+    <section id="timeline" className="relative w-full min-h-screen bg-gradient-to-b from-[#2c1f13] via-[#4a341f] to-[#a47e3b] text-[#f3e2c7] py-16 px-4 font-sans overflow-hidden">
       {/* Stars background */}
       <div className="stars-bg pointer-events-none absolute inset-0 w-full h-full z-0"></div>
       <h2 className="text-center text-5xl font-cursive text-[#f5deb3] mb-20 relative z-10">
