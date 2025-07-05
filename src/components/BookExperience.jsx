@@ -74,7 +74,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative w-full min-h-screen overflow-auto text-white"
+      className="relative w-full h-[85vh] overflow-hidden text-white"
     >
       {/* Marquee Text */}
       <div className="absolute inset-0 overflow-hidden select-none flex items-center justify-center z-0">
@@ -124,7 +124,7 @@ export const HeroSection = () => {
             speed={2}
             rotationIntensity={2}
           >
-            <Book position={[-0.15, -0.2, 0]} />
+            <Book position={[-0.5, 0, 0]} />
           </Float>
           <OrbitControls enableZoom={false} />
           <Environment preset="studio" />
