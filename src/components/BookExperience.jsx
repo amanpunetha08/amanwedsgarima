@@ -112,7 +112,7 @@ export const HeroSection = () => {
         camera={{ position: [-0.5, 1, 4], fov: 45 }}
         gl={{ alpha: true, preserveDrawingBuffer: true }}
         style={{ background: "transparent" }}
-        className="absolute inset-0 z-10 !w-full !h-full"
+        className="absolute inset-0 z-10 !w-full !h-full pointer-events-none"
       >
         <Suspense fallback={null}>
           <Float
