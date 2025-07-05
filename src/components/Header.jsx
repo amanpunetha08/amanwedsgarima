@@ -29,7 +29,7 @@ const Header = ({ menuOpen, setMenuOpen }) => {
         <a href="#" className="flex items-center gap-2">
           <img
             className="w-20 sm:w-24 h-auto"
-            src="/images/aman&garima.png"
+            src={darkOnInvitation ? "/images/aman&garima_black.png" : "/images/aman&garima.png"}
             alt="Logo"
           />
         </a>
