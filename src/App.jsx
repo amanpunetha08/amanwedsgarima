@@ -1,22 +1,24 @@
-import { Loader } from "@react-three/drei";
-import { Canvas } from "@react-three/fiber";
-import { Suspense } from "react";
-import { Experience } from "./components/Experience";
-import { UI } from "./components/UI";
+import {WeddingTimeline} from "./components/Timeline"
+import Header from "./components/Header";
+import { useState } from "react";
+import { HeroSection } from "./components/BookExperience";
+import { Invitation } from "./components/Invitation";
 
 function App() {
+  const [menuOpen, setMenuOpen] = useState(false);
   return (
-    <>
-      <UI />
-      <Loader />
-      <Canvas shadows camera={{ position: [-0.5, 1, 4], fov: 45 }}>
-        <group position-y={0}>
-          <Suspense fallback={null}>
-            <Experience />
-          </Suspense>
-        </group>
-      </Canvas>
-    </>
+    <div className="w-full">
+      {/* Fixed Header always on top */}
+      <Header menuOpen={menuOpen} setMenuOpen={setMenuOpen} />
+      {/* First Section: Canvas and UI */}
+      <section className="w-full">
+        <HeroSection />
+      </section>
+      {/* Second Section: Timeline */}
+        <WeddingTimeline />
+      {/* Invitation */}
+      <Invitation />
+    </div>
   );
 }
 

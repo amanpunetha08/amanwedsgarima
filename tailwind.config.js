@@ -4,6 +4,7 @@ export default {
   theme: {
     fontFamily: {
       sans: ["Poppins", "sans-serif"],
+      cursive: ["Great Vibes", "cursive"], // ✅ Add this line
     },
     extend: {
       fontSize: {

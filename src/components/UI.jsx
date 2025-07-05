@@ -1,5 +1,6 @@
 import { atom, useAtom } from "jotai";
 import { useEffect, useState } from "react";
+import Header from "./Header";
 
 // Photos array
 const pictures = [
@@ -43,9 +44,7 @@ export const UI = () => {
   const [audioPlaying, setAudioPlaying] = useState(false);
   const [page, setPage] = useAtom(pageAtom);
   const [menuOpen, setMenuOpen] = useState(false);
-  const [audio] = useState(
-    new Audio("/audios/background-music.mp3")
-  );
+  const [audio] = useState(new Audio("/audios/background-music.mp3"));
 
   // Page flip sound
   useEffect(() => {
@@ -84,85 +83,36 @@ export const UI = () => {
 
   return (
     <>
-      <main className="pointer-events-none select-none z-10 fixed inset-0 flex flex-col justify-between">
-        {/* Header */}
-        <header className="pointer-events-auto flex items-center justify-between px-6 py-4">
-          <a href="#" className="flex items-center gap-4">
-            <img
-              className="w-40 h-auto sm:w-48"
-              src="/images/aman&garima.png"
-              alt="Logo"
-            />
-          </a>
 
-          {/* Desktop Nav */}
-          <nav className="hidden sm:flex justify-center gap-10 text-[#f5f5f5] text-lg font-serif tracking-wide">
-            {["Home", "About", "Functions", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="hover:text-[#e0c070] transition-colors duration-300"
-              >
-                {item}
-              </a>
-            ))}
-          </nav>
-
-          {/* Mobile Hamburger */}
-          <div className="sm:hidden">
-            <button
-              className="text-white text-3xl focus:outline-none"
-              onClick={() => setMenuOpen(!menuOpen)}
-            >
-              ☰
-            </button>
-          </div>
-        </header>
-
-        {/* Mobile Menu */}
-        {menuOpen && (
-          <div className="pointer-events-auto sm:hidden flex flex-col items-center gap-4 py-6 bg-black/80 text-white text-lg font-serif">
-            {["Home", "About", "Functions", "Contact"].map((item) => (
-              <a
-                key={item}
-                href="#"
-                className="hover:text-[#e0c070] transition-colors duration-300"
-                onClick={() => setMenuOpen(false)}
-              >
-                {item}
-              </a>
-            ))}
-          </div>
-        )}
-
-        {/* Page Navigation */}
-        <div className="w-full overflow-auto pointer-events-auto flex justify-center">
+      {/* Page Navigation */}
+      <div className="w-full overflow-auto pointer-events-auto flex justify-center">
           <div className="overflow-auto flex items-center gap-2 sm:gap-4 lg:gap-6 max-w-full p-4 sm:p-6 md:p-8 lg:p-10">
             {[...pages].map((_, index) => (
-                <button
-                    key={index}
-                    className={`border-transparent hover:border-white transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-full text-sm sm:text-base lg:text-lg uppercase shrink-0 border ${
-                        index === page
-                            ? "bg-white/90 text-black"
-                            : "bg-black/30 text-white"
-                    }`}
-                    onClick={() => setPage(index)}
-                >
-                  {index === 0 ? "Cover" : `Page ${index}`}
-                </button>
+              <button
+                key={index}
+                className={`border-transparent hover:border-white transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-full text-sm sm:text-base lg:text-lg uppercase shrink-0 border ${
+                  index === page
+                    ? "bg-white/90 text-black"
+                    : "bg-black/30 text-white"
+                }`}
+                onClick={() => setPage(index)}
+              >
+                {index === 0 ? "Cover" : `Page ${index}`}
+              </button>
             ))}
             <button
-                className={`border-transparent hover:border-white transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-full text-sm sm:text-base lg:text-lg uppercase shrink-0 border ${
-                    page === pages.length
-                        ? "bg-white/90 text-black"
-                        : "bg-black/30 text-white"
-                }`}
-                onClick={() => setPage(pages.length)}
+              className={`border-transparent hover:border-white transition-all duration-300 px-3 py-2 sm:px-4 sm:py-3 md:px-5 md:py-4 rounded-full text-sm sm:text-base lg:text-lg uppercase shrink-0 border ${
+                page === pages.length
+                  ? "bg-white/90 text-black"
+                  : "bg-black/30 text-white"
+              }`}
+              onClick={() => setPage(pages.length)}
             >
               Back Cover
             </button>
           </div>
         </div>
+      <main className="pointer-events-none select-none z-10 fixed inset-0 flex flex-col justify-between">
       </main>
 
       {/* Marquee Text */}

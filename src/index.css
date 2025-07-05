@@ -1,7 +1,12 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Great+Vibes&family=Poppins:wght@400;600&display=swap");
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+body {
+  margin: 0;
+}
 
 #root {
   width: 100vw;
@@ -15,10 +20,6 @@
   );
   background-size: cover;
   background-repeat: no-repeat;
-}
-
-body {
-  margin: 0;
 }
 
 .outline-text {
@@ -36,4 +37,60 @@ body {
 
 .animate-marquee {
   animation: marquee 15s linear infinite;
+}
+
+.flip-card {
+  perspective: 1000px;
+}
+
+.flip-card-inner {
+  transition: transform 0.8s;
+  transform-style: preserve-3d;
+  position: relative;
+  height: 100%;
+}
+
+.flip-card:hover .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 1rem;
+}
+
+.flip-card-back {
+  transform: rotateY(180deg);
+}
+
+.stars-bg {
+  z-index: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+  top: 0;
+  left: 0;
+  background: transparent;
+}
+.stars-bg::before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  /* Fewer, bigger white/gold stars */
+  background-image:
+    radial-gradient(circle, #fff 7px, transparent 7px),
+    radial-gradient(circle, #ffe9a7 5px, transparent 5px),
+    radial-gradient(circle, #fffbe6 6px, transparent 6px),
+    radial-gradient(circle, #fff 8px, transparent 8px);
+  background-size: 400px 400px, 600px 600px, 500px 500px, 700px 700px;
+  background-position:
+    40px 60px, 300px 200px, 500px 100px, 200px 500px;
+  opacity: 0.8;
+  z-index: 0;
 }
