@@ -94,7 +94,7 @@ export const Invitation = () => {
           <div className="text-[#a47e3b] font-semibold text-lg">
             <p>
               📅{" "}
-              <span className="text-[#4a341f]">Thursday, 5th December 2025</span>
+              <span className="text-[#4a341f]">Friday, 5th December 2025</span>
             </p>
             <p className="mt-2 leading-snug">
               📍 Samrath Garden, Kamalwaganja Rd,<br />
