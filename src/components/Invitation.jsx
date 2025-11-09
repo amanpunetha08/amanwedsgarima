@@ -1,97 +1,124 @@
-import React, { useState } from "react";
-
-const invitationBg =
-  "bg-gradient-to-br from-[#f5deb3] via-[#a47e3b] to-[#4a341f] border-4 border-[#e5c07b] shadow-2xl";
+import React, { useState, useEffect } from "react";
 
 export const Invitation = () => {
-  const [name, setName] = useState("");
-  const [number, setNumber] = useState("");
-  const [submitted, setSubmitted] = useState(false);
+  const photos = [
+    "/textures/save_the_date.jpg",
+    "/textures/invitation.jpg",
+  ];
 
-  const handleSubmit = (e) => {
-    e.preventDefault();
-    if (name.trim() && number.trim()) {
-      setSubmitted(true);
-    }
-  };
+  const [currentPhoto, setCurrentPhoto] = useState(0);
+
+  // Auto change image
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentPhoto((prev) => (prev + 1) % photos.length);
+    }, 3000);
+    return () => clearInterval(interval);
+  }, [photos.length]);
+
+  const goToPhoto = (index) => setCurrentPhoto(index);
 
   return (
-    <div id="invitation" className="flex flex-col items-center justify-center min-h-screen w-full">
-      {!submitted ? (
-        <form
-          onSubmit={handleSubmit}
-          className="flex flex-col items-center gap-6 p-8 rounded-2xl bg-white/20 shadow-lg backdrop-blur-md"
-        >
-          <h2 className="text-3xl font-cursive text-[#a47e3b] mb-2">Enter Your Name & Number</h2>
-          <input
-            type="text"
-            value={name}
-            onChange={(e) => setName(e.target.value)}
-            placeholder="Your Name"
-            className="px-4 py-2 rounded-lg border border-[#e5c07b] focus:outline-none focus:ring-2 focus:ring-[#a47e3b] text-lg bg-white/80"
-            required
-          />
-          <input
-            type="tel"
-            value={number}
-            onChange={(e) => setNumber(e.target.value)}
-            placeholder="WhatsApp Number (with country code, e.g. 919876543210)"
-            className="px-4 py-2 rounded-lg border border-[#e5c07b] focus:outline-none focus:ring-2 focus:ring-[#a47e3b] text-lg bg-white/80"
-            required
-          />
-          <button
-            type="submit"
-            className="mt-2 px-6 py-2 rounded-lg bg-[#a47e3b] text-white font-semibold shadow hover:bg-[#4a341f] transition"
-          >
-            See My Invitation
-          </button>
-        </form>
-      ) : (
+    <section
+      id="invitation"
+      className="flex flex-col items-center justify-center w-full min-h-screen bg-[#f8f5ef] py-16 px-4 sm:px-8"
+    >
+      {/* Section Header */}
+      <h2 className="text-center text-6xl sm:text-8xl font-cursive text-[#a47e3b] mb-12 tracking-wide">
+        Invitation
+      </h2>
+
+      {/* Main Flex Layout */}
+      <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-7xl">
+        {/* LEFT SIDE — Image Slideshow */}
         <div
-          className={`max-w-lg w-full p-10 rounded-3xl ${invitationBg} flex flex-col items-center animate-fade-in relative overflow-hidden shadow-2xl`}
-          style={{ border: '6px double #a47e3b', background: 'rgba(255, 248, 225, 0.95)' }}
+          className="relative flex items-center justify-center overflow-hidden rounded-3xl shadow-xl w-full md:w-1/2"
+          style={{
+            aspectRatio: "1080 / 1530",
+            maxHeight: "90vh",
+          }}
         >
-          {/* Decorative Top Flourish */}
-          <div className="absolute top-0 left-1/2 -translate-x-1/2 mt-[-32px]">
-            <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 35 Q40 5 75 35" stroke="#a47e3b" strokeWidth="4" fill="none"/>
-            </svg>
+          {/* Image Transition */}
+          <div className="absolute inset-0">
+            {photos.map((photo, index) => (
+              <img
+                key={index}
+                src={photo}
+                alt={`Wedding ${index + 1}`}
+                className={`absolute inset-0 object-contain w-full h-full transition-opacity duration-1000 ease-in-out ${
+                  index === currentPhoto ? "opacity-100" : "opacity-0"
+                }`}
+              />
+            ))}
           </div>
-          <h2 className="text-5xl font-cursive text-[#a47e3b] mb-2 text-center tracking-wide drop-shadow-lg">
-            Aman <span className="text-[#4a341f]">&</span> Garima
-          </h2>
-          <div className="text-lg text-[#4a341f] mb-2 italic font-serif tracking-wide">Request the honor of your presence</div>
-          <div className="w-16 border-t-2 border-[#a47e3b] mb-4"></div>
-          <p className="text-2xl text-[#4a341f] mb-4 text-center font-cursive">
-            Dear <span className="font-bold text-[#a47e3b]">{name}</span>,
-          </p>
-          <p className="text-lg text-[#4a341f] mb-2 text-center">
-            You are cordially invited to celebrate the wedding of
-            <br />
-            <span className="font-bold text-[#a47e3b]">Aman & Garima</span>.
-          </p>
-          <div className="flex flex-col items-center my-4">
-            <div className="flex items-center gap-2 text-[#a47e3b] text-lg font-semibold">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M12 8v4l3 3" stroke="#a47e3b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><circle cx="12" cy="12" r="10" stroke="#a47e3b" strokeWidth="2"/></svg>
-              5th December
-            </div>
-            <div className="flex items-center gap-2 text-[#a47e3b] text-lg font-semibold mt-2">
-              <svg width="22" height="22" fill="none" viewBox="0 0 24 24"><path d="M17 10.5V6a2 2 0 0 0-2-2H9a2 2 0 0 0-2 2v4.5" stroke="#a47e3b" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/><rect x="3" y="10.5" width="18" height="8.5" rx="2" stroke="#a47e3b" strokeWidth="2"/></svg>
-              Samrath Garden, Kamalwaganja Rd, near Gurukul school, Kamaluaganja, gaur, Haldwani, Uttarakhand 263139
-            </div>
-          </div>
-          <div className="w-16 border-t-2 border-[#a47e3b] mt-4 mb-2"></div>
-          <div className="mt-2 text-center text-[#4a341f] text-lg font-cursive italic">
-            We look forward to sharing this special day with you!
-          </div>
-          {/* Decorative Bottom Flourish */}
-          <div className="absolute bottom-0 left-1/2 -translate-x-1/2 mb-[-32px]">
-            <svg width="80" height="40" viewBox="0 0 80 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M5 5 Q40 35 75 5" stroke="#a47e3b" strokeWidth="4" fill="none"/>
-            </svg>
+
+          {/* Navigation Dots */}
+          <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
+            {photos.map((_, index) => (
+              <button
+                key={index}
+                onClick={() => goToPhoto(index)}
+                className={`w-3 h-3 rounded-full transition-all duration-300 ${
+                  currentPhoto === index
+                    ? "bg-[#a47e3b] scale-125"
+                    : "bg-[#e5c07b] opacity-60 hover:opacity-100"
+                }`}
+              />
+            ))}
           </div>
         </div>
-      )}
-    </div>
+
+        {/* RIGHT SIDE — Text Invitation */}
+        <div
+          className="flex flex-col items-center justify-center text-center px-8 py-6 rounded-3xl border-4 border-[#d4af37] bg-white/80 shadow-lg backdrop-blur-sm w-full md:w-1/2"
+          style={{
+            aspectRatio: "1080 / 1530",
+            maxHeight: "90vh",
+          }}
+        >
+          <h2 className="text-5xl font-cursive text-[#a47e3b] mb-4">
+            Aman <span className="text-[#4a341f]">&</span> Garima
+          </h2>
+
+          <p className="text-[#4a341f] italic font-serif text-lg mb-3">
+            Together with our families,
+          </p>
+
+          <p className="text-[#4a341f] text-base mb-4 leading-relaxed">
+            We joyfully invite you to share in our happiness<br />
+            as we celebrate the beginning of our forever.
+          </p>
+
+          <div className="w-20 border-t-2 border-[#a47e3b] mb-5"></div>
+
+          <div className="text-[#a47e3b] font-semibold text-lg">
+            <p>
+              📅{" "}
+              <span className="text-[#4a341f]">Thursday, 5th December 2025</span>
+            </p>
+            <p className="mt-2 leading-snug">
+              📍 Samrath Garden, Kamalwaganja Rd,<br />
+              near Gurukul School, Haldwani, Uttarakhand
+            </p>
+          </div>
+
+          <div className="mt-5">
+            <p className="text-[#4a341f] italic font-cursive text-base">
+              Your presence will make our day even more special!
+            </p>
+          </div>
+
+          {/* QR Code */}
+          <div className="mt-6 flex flex-col items-center">
+            <img
+              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/ogw9XBk4irNxuWCv9"
+              alt="Google Maps QR Code"
+              className="w-32 h-32 rounded-md border border-[#e5c07b] shadow-md"
+            />
+            <p className="text-sm text-[#4a341f] mt-2">Scan for location</p>
+          </div>
+        </div>
+      </div>
+    </section>
   );
 };
