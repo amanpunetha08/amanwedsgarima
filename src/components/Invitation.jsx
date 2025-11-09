@@ -8,7 +8,7 @@ export const Invitation = () => {
 
   const [currentPhoto, setCurrentPhoto] = useState(0);
 
-  // Auto change image
+  // Auto change image every 3 seconds
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentPhoto((prev) => (prev + 1) % photos.length);
@@ -28,7 +28,7 @@ export const Invitation = () => {
         Invitation
       </h2>
 
-      {/* Main Flex Layout */}
+      {/* Main Layout */}
       <div className="flex flex-col md:flex-row items-center justify-center gap-8 w-full max-w-7xl">
         {/* LEFT SIDE — Image Slideshow */}
         <div
@@ -38,7 +38,7 @@ export const Invitation = () => {
             maxHeight: "90vh",
           }}
         >
-          {/* Image Transition */}
+          {/* Smooth fade transition */}
           <div className="absolute inset-0">
             {photos.map((photo, index) => (
               <img
@@ -52,7 +52,7 @@ export const Invitation = () => {
             ))}
           </div>
 
-          {/* Navigation Dots */}
+          {/* Dots Navigation */}
           <div className="absolute bottom-4 left-1/2 -translate-x-1/2 flex gap-2">
             {photos.map((_, index) => (
               <button
@@ -68,7 +68,7 @@ export const Invitation = () => {
           </div>
         </div>
 
-        {/* RIGHT SIDE — Text Invitation */}
+        {/* RIGHT SIDE — Invitation Text */}
         <div
           className="flex flex-col items-center justify-center text-center px-8 py-6 rounded-3xl border-4 border-[#d4af37] bg-white/80 shadow-lg backdrop-blur-sm w-full md:w-1/2"
           style={{
@@ -108,14 +108,21 @@ export const Invitation = () => {
             </p>
           </div>
 
-          {/* QR Code */}
+          {/* QR Code Section (Clickable) */}
           <div className="mt-6 flex flex-col items-center">
-            <img
-              src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/ogw9XBk4irNxuWCv9"
-              alt="Google Maps QR Code"
-              className="w-32 h-32 rounded-md border border-[#e5c07b] shadow-md"
-            />
-            <p className="text-sm text-[#4a341f] mt-2">Scan for location</p>
+            <a
+              href="https://maps.app.goo.gl/ogw9XBk4irNxuWCv9"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="transition-transform hover:scale-105 active:scale-95"
+            >
+              <img
+                src="https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=https://maps.app.goo.gl/ogw9XBk4irNxuWCv9"
+                alt="Google Maps QR Code"
+                className="w-32 h-32 rounded-md border border-[#e5c07b] shadow-md"
+              />
+            </a>
+            <p className="text-sm text-[#4a341f] mt-2">Scan or click for location</p>
           </div>
         </div>
       </div>
