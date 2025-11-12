@@ -6,20 +6,22 @@ import { pageAtom } from "./UI";
 import { useAtom } from "jotai";
 
 const pictures = [
-  "DSC01420",
-  "DSC00993",
-  "DSC00933",
-  "DSC00966",
-  "DSC01011",
-  "DSC01040",
-  "DSC00680",
-  "DSC01489",
-  "DSC02031",
-  "DSC01103",
-  "DSC02064",
-  "DSC02069",
-  "DSC01071",
-  "DSC01064",
+  "1",
+  "2",
+  "3",
+  "4",
+  "5",
+  "6",
+  "7",
+  "8",
+  "9",
+  "10",
+  "11",
+  "12",
+  "13",
+  "14",
+  "15",
+  "16"
 ];
 
 const pages = [
