@@ -76,7 +76,7 @@ export const HeroSection = () => {
   return (
     <section
       id="hero"
-      className="relative w-full h-[85vh] overflow-hidden text-white"
+      className="relative w-full h-[82vh] overflow-hidden text-white"
     >
       {/* Marquee Text */}
       <div className="absolute inset-0 overflow-hidden select-none flex items-center justify-center z-0">
